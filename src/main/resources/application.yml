@@ -5,13 +5,16 @@ server:
 
 spring:
   datasource:
-    driver-class-name: org.postgres.Driver
-    url: jdbc:postgresql:2
-    username: postgres
-    password: 123456
+    driver-class-name: org.postgresql.Driver
+    url: postgres://kojgulkysjbymr:31ff8e9baec257ca2efb73adaf1ed064206f674120742fdd3de32dcee9df59a6@ec2-34-232-191-133.compute-1.amazonaws.com:5432/d9ts3nd97k2p6t
+    username: kojgulkysjbymr
+    password: 31ff8e9baec257ca2efb73adaf1ed064206f674120742fdd3de32dcee9df59a6
   jpa:
     show-sql: true
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-    generate-ddl: false
+    generate-ddl: true
     hibernate:
       ddl-auto: none
+
+application:
+  description: Projeto criado para o bootcamp DIO - Santander Dev Week
